@@ -59,7 +59,7 @@ public class BasicItemController {
 //    @PostMapping("/add")
     public String addItemV2(@ModelAttribute("item") Item item, Model model) {
         itemRepository.save(item);
-//      model.addAttribute("item", item); //자동 추가, 생략 가능
+//      model.addAttribute("item", item); //자동 추가, 생략 가능, Model에 자동으로 넣어줌
 
         return "basic/item";
     }
